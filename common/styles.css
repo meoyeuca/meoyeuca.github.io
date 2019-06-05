@@ -234,7 +234,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 	header .main-menu li.drop-down > ul.drop-down-menu{ position: static; box-shadow: none; }
 	
 	header .main-menu li.drop-down > ul.drop-down-menu li{ border-top: 1px solid #eee; }
-	header .main-menu li.drop-down > ul.drop-down-inner li:first-child{ border-top: 1px solid #ddd; }
+	header .main-menu li.drop-down > ul.drop-down-inner li:first-child{ border-top: 1px solid #ddd;   z-index: 1100; }
 	
 	/* DROPDOWN HOVER */
 	
