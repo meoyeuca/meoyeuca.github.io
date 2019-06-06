@@ -16,8 +16,11 @@
 			return false;
 		});
 	}
+	
 	//Time Now
 	setInterval (function() {
+		//CheckTime
+		
 		var date = new Date();			            
 		var gio = date.getHours();
 		var phut = date.getMinutes();
@@ -26,7 +29,16 @@
 		var ngay = date.getDate();
 		var t = date.getMonth()+1;
 		var nam = date.getFullYear();
-	document.getElementById('watch').innerHTML ='Bây giờ là: '+ gio + ':' + phut + ':' + giay + ' - Thứ ' + thu + ', ngày ' + ngay + ' tháng ' + t +' năm ' +  nam;}, 1000);
+		if (gio<10) {
+			gio="0" + gio;
+		}
+		if(phut<10){
+				phut="0" + phut;	
+			}
+		if(giay<10){
+					giay="0" + giay;
+				}
+	document.getElementById('watch').innerHTML ='Bây giờ là: '+ gio + ':' + phut + ':' + giay + ' - Thứ ' + thu + ', ngày ' + ngay + ' tháng ' + t +' năm ' +  nam;}, 500);
 	// SEARCH AREA
 	if(isExists('.src-btn')){
 		
