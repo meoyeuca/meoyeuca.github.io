@@ -151,6 +151,8 @@ header .src-form input{ display: block; width: 100%; height: 100%; padding: 0 15
 header .src-form input:focus{ background: #f1f2f1; }
 
 header .src-form button{ position: absolute; top: 0; bottom: 0; left: 0; width: 60px; background: #eee; }
+#watch{ color: #F0B90B; }
+.pading-10{padding-left: 10%; }
 
 
 
@@ -311,7 +313,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .float-right{ float: right!important; }
 
 .text-center{ text-align: center; }
-
 /* LINE HEIGHT */
 
 .lh-30{ line-height: 30px; }
