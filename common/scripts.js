@@ -16,7 +16,17 @@
 			return false;
 		});
 	}
-	
+	//Time Now
+	setInterval (function() {
+		var date = new Date();			            
+		var gio = date.getHours();
+		var phut = date.getMinutes();
+		var giay = date.getSeconds();
+		var thu = date.getDay()+1;
+		var ngay = date.getDate();
+		var t = date.getMonth()+1;
+		var nam = date.getFullYear();
+	document.getElementById('watch').innerHTML ='Bây giờ là: '+ gio + ':' + phut + ':' + giay + ' - Thứ ' + thu + ', ngày ' + ngay + ' tháng ' + t +' năm ' +  nam;}, 1000);
 	// SEARCH AREA
 	if(isExists('.src-btn')){
 		
