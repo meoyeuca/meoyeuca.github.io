@@ -27,18 +27,15 @@
 		var giay = date.getSeconds();
 		var thu = date.getDay()+1;
 		var ngay = date.getDate();
-		var t = date.getMonth()+1;
+		var thang = date.getMonth()+1;
 		var nam = date.getFullYear();
-		if (gio<10) {
-			gio="0" + gio;
-		}
-		if(phut<10){
-				phut="0" + phut;	
-			}
-		if(giay<10){
-					giay="0" + giay;
-				}
-	document.getElementById('watch').innerHTML ='Bây giờ là: '+ gio + ':' + phut + ':' + giay + ' - Thứ ' + thu + ', ngày ' + ngay + ' tháng ' + t +' năm ' +  nam;}, 500);
+		if (gio<10) {gio="0" + gio;}
+		if(phut<10){phut="0" + phut;}
+		if(giay<10){giay="0" + giay;}
+		if(ngay<10){ngay="0" + ngay;}
+		if(thang<10){thang="0" + thang;}
+		if(thu<2){thu="Chủ nhật";}else{thu="Thứ "+thu;}
+	document.getElementById('watch').innerHTML ='Bây giờ là: '+ gio + ':' + phut + ':' + giay + ' - ' + thu + ', ngày ' + ngay + ' tháng ' + thang +' năm ' +  nam;}, 500);
 	// SEARCH AREA
 	if(isExists('.src-btn')){
 		
